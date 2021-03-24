@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>&lt;Guilherme Silveira/&gt;</title>
+
+        <link rel="stylesheet" href="src/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/font-awesome.min.css">
+        <link rel="stylesheet" href="src/css/variables.css">
+        <link rel="stylesheet" href="src/css/style.min.css"> 
+        <link rel="shortcut icon" href="src/images/moji_paz.png">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header col-12 no-padding">
+                <h2 class="color-white col-sm-12 col-md-12 no-padding" data-typer="Bem-vindo :)">B</h2>
+            </div>
+
+            <div class="content shadow col-12 d-inline-flex">
+                <ul class="nav nav-tabs col-2 no-padding" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">/sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false" onclick="fillBars()">/habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">/experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="academic-tab" data-toggle="tab" href="#academic" role="tab" aria-controls="academic" aria-selected="false">/formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="references-tab" data-toggle="tab" href="#references" role="tab" aria-controls="references" aria-selected="false">/referências</a>
+                    </li>
+                </ul>
+                <div class="tab-content col-sm-12 col-md-10 no-padding" id="myTabContent">
+                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                        <h2>/sobre</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="pic col-sm-12 col-md-3"><img src="src/images/me.jpg" width="100%"></div>
+                            <div class="col-sm-12 col-md-9">
+                                <h6 class="json-title">#Guilherme_Batista_da_Silveira <code>=</code> {</h6>
+                                <div class="json">
+                                    <h6><code>"Idade"</code>: <code id="age"> </code>,</h6>
+                                    <h6><code>"Profissão Atual"</code>: <code>"Assistente de T.I"</code>,</h6>
+                                    <h6><code>"Email"</code>: <code>"batistas.guilherme@gmail.com"</code>,</h6>
+                                    <h6><code>"Telefone"</code>: <code>"54 999988857"</code>,</h6>
+                                </div>
+                                <h6 class="json-end">}</h6>
+                                <p class="text-right">
+                                    <a href="https://drive.google.com/u/0/uc?id=1OnRywxwi2GddU3HVsrUpPKpFeEwlKuUf&export=download" download>
+                                        <button type="button" class="download-btn">
+                                                Baixar Currículo
+                                        </button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text col-12">
+                                <p>
+                                    Extrovertido, comunicativo e criativo. Cursando Analise e desenvolvimento de Sistemas pela Unisinos. Estudando para me tornar um desenvolvedor, no momento aluno do curso intensivo de programação do zero da Cubos Academy, e buscando ao máximo melhorar minhas habilidades conquistar meu espaço no mercado de trabalho.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="s-tab">
+                        <h2>/habilidades</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Habilidades ainda em desenvolvimento. :)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <h5>Habilidades Técnicas Relevantes:</h5>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-wrench"></i> Manutenção em hardware</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="90"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-comments"></i> Comunicação</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="80"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-paint-brush"></i> Front-end (JS, CSS, HTML)</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="15"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-database"></i> Back-end (SQL)</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="15"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <h5>Outras habilidades:</h5>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-users"></i> Trabalho em equipe</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="85"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-brain"></i> Resiliência e adaptação</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="75"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-language"></i> Inglês</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="70"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 skill">
+                                    <label><i class="fas fa-fire"></i> Culinária</label>
+                                    <div class="skill-bar">
+                                        <div class="fill" fill="98"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                        <h2>/experiência</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>💼 Assistente de T.I / GoWinz.</h5>
+                                <p>
+                                    🗓 01/2021 - Presente<br>
+                                    Instalação e configuração de software e hardware; <br>
+                                    Assistência técnica ao usuário; <br>
+                                    Monitoramento e controle em tempo real de redes; <br>
+                                    Manutenções em servidores Windows.<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>💼 Assistente de T.I / Laghetto Hotéis.</h5>
+                                <p>
+                                    🗓 09/2019 - 04/2020<br>
+                                    Instalação e configuração de software e hardware; <br>
+                                    Assistência técnica ao usuário e ao hóspede; <br>
+                                    Manutenção e instalação de DVRs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>💼 Assistente de suporte / AV Informática</h5>
+                                <p>
+                                    🗓 11/2017 - 03/2018<br>
+                                    Diagnóstico de falhas em hardware;<br>
+                                    Atendimento ao cliente de maneira remota.<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="academic" role="tabpanel" aria-labelledby="academic-tab">
+                        <h2>/formação</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>🎓 Analise e Desenvolvimento de Sistemas / Unisinos</h5>
+                                <p>
+                                    🗓 01/2020 - Em andamento<br>
+                                    Bacharel.
+                                </p>
+                            </div>
+                            <div class="col-12 grid-block">
+                                <h5>🎓 Programação do Zero Intensivo / Cubos Academy</h5>
+                                <p>
+                                    🗓 03/2021 - previsão de término: 08/2021<br>
+                                    Um curso intensivo para iniciantes, com o foco de transformar qualquer pessoa interessada em um Desenvolvedor(a) Júnior. Aborda desde os conhecimentos de programação - front-end, back-end, lógica - até as habilidades interpessoais solicitadas pelo mercado de trabalho. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="references" role="tabpanel" aria-labelledby="references-tab">
+                        <h2>/referências</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 grid-block">
+                                <h5>👨🏻‍💻 Gabriel Borba / 4All </h5>
+                                <p>
+                                    <a href="tel:51 991344250">📞 51 991344250</a> <br>
+                                    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gabriel-borba-a39322144/" target="_blank"> Gabriel Borba </a>
+                                </p>
+                            </div>
+                            <div class="col-12 grid-block">
+                                <h5>👨🏻‍💻 Frederico Maihub / Guide121</h5>
+                                <p>
+                                    <a href="tel:54 99608-8810">📞 54 99608-8810</a> <br>
+                                    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/frederico-maihub/" target="_blank"> Frederico Maihub </a>
+                                </p>
+                            </div>
+                            <div class="col-12 grid-block">
+                                <h5>👨🏻‍💻 Diego Weber / Laghetto Hotéis</h5> 
+                                <p>
+                                    <a  href="tel:54981375318">📞 54 981375318</a> <br> 
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="container justify-content-center">
+            <div class="row col-sm-12 col-md-10 offset-md-1">
+                <div class="col-sm-12 col-md-4">
+                    <p>
+                        <span class="icon">📍</span><span> Gramado - RS - Brasil </span>
+                    </p>
+                    <p>
+                        <a href="tel:54999988857">
+                            <span class="icon">📞</span><span>(54) 9 9998-8857</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:batistas.guilherme@gmail.com">
+                            <span class="icon">📨</span><span>batistas.guilherme@gmail.com</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <img src="src/images/moji_notebook.png">
+                </div>
+                <div class="col-sm-12 col-md-3 col-md-offset-1 d-flex justify-content-center">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-4">
+                            <a href="https://www.linkedin.com/in/guibosilveira/" target="_blank">
+                                <i class="fab fa-linkedin-in media-link"></i>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://github.com/Aphroguibo" target="_blank">
+                                <i class="fab fa-github media-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Always give the right credits -->
+            <div class="col-12 text-center color-light-gray">
+                Template by: <a href="https://github.com/fredimaihub" target="_blank"><b>Fredi Maihub</b></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b99b18faa4.js" crossorigin="anonymous"></script>
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/main.min.js"></script>
+</html>
